@@ -30,5 +30,8 @@ ul li {
     color:#bec8d9;
 }
 ul li a {
-    color:#ffcc00;
+    font-size: 2em;
+    color: #ff6347;
+    text-decoration: none;
+    float: right;
 }

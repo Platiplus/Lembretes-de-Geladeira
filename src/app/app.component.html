@@ -1,9 +1,10 @@
 <input type="text" [(ngModel)]="author" name="author" placeholder="Nome">
 <textarea [(ngModel)]="content" name="content" placeholder="Lembrete"></textarea>
-<input type="submit" value="Adicionar um Lembrete" (click)="addLembrete()">
+<input type="submit" value="ADICIONAR LEMBRETE" (click)="addLembrete()">
 <ul *ngFor="let lembrete of lembretes | async">
   <li (click)="getLembrete(lembrete.id)">
-    <strong>{{lembrete.data.author}} (<a href="#" (click)="deleteLembrete(lembrete.id)">Delete</a>)</strong>
+    <strong>{{lembrete.data.author}}</strong> 
+    <a href="#" (click)="deleteLembrete(lembrete.id)">X</a>
     <br>
   {{lembrete.data.content}}
   </li>

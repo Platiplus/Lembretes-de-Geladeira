@@ -47,6 +47,8 @@ export class AppComponent {
 
   addLembrete(){
     this.afs.collection('lembrete').add({'author':this.author, 'content':this.content});
+    this.author = '';
+    this.content = '';
   }
 
   getLembrete(lembreteId){
